@@ -1,17 +1,17 @@
 import {Composition} from 'remotion';
 import {MyComposition} from './Composition';
+// Import Scene from './numbers/Scene';
+// import Scene from './sequence/Scene';
 
 export const RemotionVideo: React.FC = () => {
 	return (
-		<>
-			<Composition
-				id="Empty"
-				component={MyComposition}
-				durationInFrames={60}
-				fps={30}
-				width={1280}
-				height={720}
-			/>
-		</>
+		<Composition
+			id="demo"
+			component={MyComposition}
+			durationInFrames={120}
+			fps={15}
+			width={1080}
+			height={1920}
+		/>
 	);
 };
